@@ -7,10 +7,10 @@ services:
       - "3306:3306"
     environment:
       - MYSQL_DATABASE='djangoproject'
-      - MYSQL_USER='nram94'
-      - MYSQL_PASSWORD='123456789'
-      - MYSQL_HOST='104.154.102.101'
-      - MYSQL_ROOT_PASSWORD='123456789'
+      - MYSQL_USER='root'
+      - MYSQL_PASSWORD='admin'
+      - MYSQL_HOST='34.66.168.164'
+      - MYSQL_ROOT_PASSWORD='admin'
     volumes:
       - /tmp/code/mysqld:/var/run/mysqld
       - ./db:/var/lib/mysql
